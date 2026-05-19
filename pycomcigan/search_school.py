@@ -25,6 +25,6 @@ def get_school_code(school_name: str) -> List[Tuple[int, str, str, int]]:
 
     Returns:
         List[Tuple[int, str, str, int]]: List of school information in format:
-                   [[region_code, region_name, school_name, school_code], ...]
+                   [(region_code, region_name, school_name, school_code), ...]
     """
     return school_search(school_name, get_comcigan_code())

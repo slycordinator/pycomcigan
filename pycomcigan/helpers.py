@@ -42,7 +42,7 @@ def school_search(school_name: str, comcigan_code: str) -> List[Tuple[int, str, 
 
     Returns:
         List[Tuple[int, str, str, int]]: List of school information in format:
-                   [[region_code, region_name, school_name, school_code], ...]
+                   [(region_code, region_name, school_name, school_code), ...]
     """
     school_name_encoded = encode_school_name(school_name)
     search_url = f"{COMCIGAN_URL}{comcigan_code}{school_name_encoded}"
